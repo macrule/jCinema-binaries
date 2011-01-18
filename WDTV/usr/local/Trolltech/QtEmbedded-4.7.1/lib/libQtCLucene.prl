@@ -1,0 +1,7 @@
+QMAKE_PRL_BUILD_DIR = /home/wdtv/buildarea/qt-everywhere-opensource-src-4.7.1/tools/assistant/lib/fulltextsearch/
+QMAKE_PRO_INPUT = fulltextsearch.pro
+QMAKE_PRL_TARGET = libQtCLucene.so.4.7.1
+QMAKE_PRL_DEFINES = QT_SHARED
+QMAKE_PRL_CONFIG = lex yacc uic resources qt release incremental link_prl def_files_disabled no_mocdepend release qt_no_framework release shared dll embedded largefile precompile_header dylib create_prl link_prl depend_includepath QTDIR_build qt_install_headers qt depend_includepath qmake_cache target_qt hide_symbols create_libtool create_pc explicitlib qt warn_off hide_symbols exceptions moc thread shared dll
+QMAKE_PRL_VERSION = 4.7.1
+QMAKE_PRL_LIBS = -L/usr/local/Trolltech/Qt-4.7.1/lib  -lQtNetwork -L/usr/local/Trolltech/Qt-4.7.1/lib -lQtCore -lpthread 

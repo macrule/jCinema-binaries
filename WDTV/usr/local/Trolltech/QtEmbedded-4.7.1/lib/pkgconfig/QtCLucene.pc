@@ -1,0 +1,19 @@
+prefix=/usr/local/Trolltech/Qt-4.7.1
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtCLucene
+qt_config=lex yacc uic resources qt release incremental link_prl def_files_disabled no_mocdepend release qt_no_framework release shared dll embedded largefile precompile_header dylib create_prl link_prl depend_includepath QTDIR_build qt_install_headers qt depend_includepath qmake_cache target_qt hide_symbols create_libtool create_pc explicitlib qt warn_off hide_symbols exceptions moc thread shared dll
+moc_location=/usr/local/Trolltech/Qt-4.7.1/bin/moc
+uic_location=/usr/local/Trolltech/Qt-4.7.1/bin/uic
+rcc_location=/usr/local/Trolltech/Qt-4.7.1/bin/rcc
+lupdate_location=/usr/local/Trolltech/Qt-4.7.1/bin/lupdate
+lrelease_location=/usr/local/Trolltech/Qt-4.7.1/bin/lrelease
+
+Name: Qtclucene
+Description: Qtclucene Library
+Version: 4.7.1
+Libs: -L${libdir} -lQtCLucene 
+Libs.private: -L/usr/local/Trolltech/Qt-4.7.1/lib  -lQtNetwork -L/usr/local/Trolltech/Qt-4.7.1/lib -lQtCore -lpthread   
+Cflags: -DQT_SHARED -I/usr/local/Trolltech/Qt-4.7.1/include -I${includedir}
+Requires: QtCore
+
