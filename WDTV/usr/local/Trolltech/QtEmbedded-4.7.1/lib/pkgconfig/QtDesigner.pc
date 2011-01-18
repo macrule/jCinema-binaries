@@ -1,4 +1,4 @@
-prefix=/usr/local/Trolltech/Qt-4.7.1
+prefix=/usr/local/Trolltech/QtEmbedded-4.7.1
 exec_prefix=${prefix}
 libdir=${prefix}/lib
 includedir=${prefix}/include/QtDesigner
@@ -9,6 +9,6 @@ Description: Qtdesigner Library
 Version: 4.7.1
 Libs: -L${libdir} -lQtDesigner 
 Libs.private: -L/home/wdtv/buildarea/qt-everywhere-opensource-src-4.7.1/lib  -lQtXml -L/home/wdtv/buildarea/qt-everywhere-opensource-src-4.7.1/lib -lQtGui -L/usr/local/lib -ldirectfb -lz -lfusion -ldirect -ldl -lQtNetwork -lQtCore -lpthread   
-Cflags: -I/usr/local/Trolltech/Qt-4.7.1/include -I${includedir}
+Cflags: -I/usr/local/Trolltech/QtEmbedded-4.7.1/include -I${includedir}
 Requires: QtXml
 
