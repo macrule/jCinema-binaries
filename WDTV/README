@@ -1,0 +1,17 @@
+The Qt libs provided were built using scratchbox2 and the following
+configuration settings:
+
+sb2 ./configure -nomake examples -nomake demos -nomake docs \
+  -embedded generic -qt-gfx-directfb -release -no-script -no-scripttools \
+  -no-exceptions -no-stl -no-qt3support -no-openssl -no-accessibility \
+  -shared -fast -no-nis -no-cups -no-libmng -no-multimedia -no-glib \
+  -no-decoration-styled -no-decoration-windows -no-decoration-default \
+  -no-gfx-linuxfb -no-gfx-multiscreen -javascript-jit
+sb2 make
+sb2 -eR make install
+
+To make "-javascript-jit" work for MIPS(EL) the QtEmbedded sources have
+to be patched first. They are missing one commit from webkit. A diff for
+this commit that can be easily used with "patch" can be found here:
+
+http://trac.webkit.org/changeset/56759?format=diff&new=56759
